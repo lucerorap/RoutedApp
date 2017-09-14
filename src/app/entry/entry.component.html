@@ -1,0 +1,9 @@
+<form (ngSubmit)="onSubmit(nameForm)" #nameForm="ngForm">
+    <label>Student Number: </label> <input type="text" id="num" name="studNum" ngModel required pattern="[0-9]+$"><br>
+    <label>First Name: </label> <input type="text" id="fname" name="studFname" ngModel><br>
+    <label>Last Name: </label> <input type="text" id="lname" name="studLname" ngModel><br>
+    <label>Program: </label> <input type="text" id="prog" name="studProg" ngModel><br>
+    <label>Year: </label> <input type="text" id="yr" name="studYr" ngModel><br><br>
+
+    <button>Add Student Entry</button>
+</form>
